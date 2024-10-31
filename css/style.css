@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Global */
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.295);
+    color: white;
+    padding: 20px 0;
+    min-height: 70px;
+    text-align: center;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.178);
+    height: 40px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav li {
+    display: inline; /* Changed from float: center; */
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+/* Login/Signup Form */
+.login-form,
+.signup-form {
+    position: fixed; /* Fixed positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact center */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+.login-form h2,
+.signup-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form p,
+.signup-form p {
+    margin: 10px 0;
+}
+
+.login-form label,
+.signup-form label {
+    display: block;
+    margin: 5px 0;
+}
+
+.login-form input,
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Main Section */
+main {
+    background-image: url(../image/africanwildlife5.jpg); /* Change this to your image path */
+    background-size: cover;
+    background-position: center;
+    padding: 20px; /* Optional padding for content */
+    color: white; /* Adjust text color for visibility */
+    text-align: center; /* Center text */
+    min-height: 50vh; /* Minimum height set to 80% of the viewport height */
+}
+ /* New class for centering content under the heading */
+.main-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically if needed */
+    margin-top: 20px; /* Add some space below the heading */
+}
+
+/*sevice section*/
+.service-section {
+    text-align: center; /* Center the heading */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Add a light background for contrast */
+    padding: 20px; /* Add some padding */
+}
+
+.service-section h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.box {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    width: calc(33.333% - 20px); /* Three boxes in a row */
+    box-sizing: border-box;
+}
+
+
+.service-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Keep the aspect ratio */
+}
+/*contact section*/
+.contact-section {
+    display: flex; /* Use flexbox layout */
+    align-items: stretch; /* Stretch items to fill the height */
+    background-color: rgba(255, 255, 255, 0.7); /* Background with transparency */
+    padding: 20px; /* Add some padding */
+}
+
+.contact-info {
+    flex: 1; /* This will take half of the section */
+    position: relative; /* Allows positioning for the image */
+}
+
+.contact-image {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.contact-details {
+    flex: 1; /* This will take the other half of the section */
+    padding: 20px; /* Add padding for content */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center the content vertically */
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Background for contact details */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+/*additional detail*/
+.additional-details-section {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center the text */
+}
+
+.details-box {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space items evenly */
+    flex-wrap: wrap; /* Wrap items to next line on small screens */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.detail-item {
+    background: white; /* White background for detail items */
+    border: 1px solid #ccc; /* Border for definition */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    margin: 10px; /* Margin around each item */
+    flex: 1; /* Allow items to grow equally */
+    min-width: 200px; /* Minimum width for items */
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.295);
+    padding: 10px 0;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+

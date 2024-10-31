@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SafarWeb Welcome</title>
+    <link rel="Stylesheet" href="css/style.css">
+    <script>
+        function showLogin() {
+            document.getElementById('login').style.display = 'block';
+            document.getElementById('signup').style.display = 'none'; // Hide signup if login is shown
+        }
+
+        function closeLogin() {
+            document.getElementById('login').style.display = 'none';
+        }
+
+        function showSignup() {
+            document.getElementById('signup').style.display = 'block';
+            document.getElementById('login').style.display = 'none'; // Hide login if signup is shown
+        }
+
+        function closeSignup() {
+            document.getElementById('signup').style.display = 'none';
+        }
+    </script>
+
+</head>
+<body>
+    <div class="container">
+    <header>  
+        <h1>TANZANIA WILD TOURISM COMPANY</h1>
+     </header>
+    <div id="navigation">
+        
+     <nav>
+        <ul>
+            <li class="current"><a href="index.html">HOME</a></li>
+            <li><a href="about Us.html">ABOUT US</a></li>
+            <li><a href="galary.html">GALLERY</a></li>
+        </ul>
+    </nav>
+    
+   
+    <main>
+        <h1>Welcome to Tanzania</h1>
+        <div class="main-content">
+            <p>Welcome to our Wildlife Tour Company! You can sign in <a href="login.html">HERE</a> to book a reservation for your visit to Tanzania.</p>
+        </div>
+    </main>
+
+     <!-- Login Form -->
+     <div class="login-form" id="login" style="display:none;">
+        <h2>Login</h2>
+        <form action="process_login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+        <button onclick="closeLogin()">Close</button>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="signup-form" id="signup" style="display:none;">
+        <h2>Sign Up</h2>
+        <form action="process_signup.php" method="POST">
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" required>
+            
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <button type="submit">Create Account</button>
+        </form>
+        <button onclick="closeSignup()">Close</button>
+    </div>
+</div>
+    
+</div>
+</div>
+
+    <section id="services" class="service-section">
+            <h2>Our services</h2>
+            <div class="service-container" style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+            <div class="box">
+                <img src="image/africanwildlife1.jpg" alt="logo" class="service-image">
+                <h3>SERENGETI</h3>
+                <p>a place wheregdd gdgdskk hdvhghgu</p>
+                <button class="read more">read more</button>
+            </div>
+</section>
+<section id="contact" class="contact-section">
+        <div class="contact-info">
+            <img src="image/africanwildlife8.jpg" alt="logo" class="contact-image">
+        </div>
+            <div class="contact-details">
+                <h1 class="page-title">SafarWeb Contact Details</h1>
+                <p class="dark">all seasons</p>
+                <h3>Contact Us via</h3>
+                <p>Phone: 225</p>
+                <p>Phone: 225</p>
+                <p>Email: <a href="mailto:safarWeb@gmail.com">safarWeb@gmail.com</a></p>
+            </div> 
+</section>
+
+<section id="additional-details" class="additional-details-section">
+    <div class="details-box">
+        <div class="detail-item">
+            <h3>Section 1</h3>
+            <p>Description for section 1 goes here. You can provide more details about your services or highlights of the tours.</p>
+        </div>
+        <div class="detail-item">
+            <h3>Section 2</h3>
+            <p>Description for section 2 goes here. This can include testimonials or additional information relevant to your customers.</p>
+        </div>
+        <div class="detail-item">
+            <h3>Section 3</h3>
+            <p>Description for section 3 goes here. Share important tips for travelers or links to social media.</p>
+        </div>
+    </div>
+</section>
+
+   
+    <footer> 
+        <p>We care any were 24Hr, safarWeb &copy;2024 </p>
+    </footer>
+    
+    
+</div>
+
+</body>
+</html>
